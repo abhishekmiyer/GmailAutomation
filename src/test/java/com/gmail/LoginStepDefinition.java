@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
-public class LoginStepDefinition {
+public class LoginStepDefinition  {
     WebDriver driver;
 
     @Given("I am on the Gmail login page")
@@ -22,7 +22,7 @@ public class LoginStepDefinition {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\iyerl\\IdeaProjects\\GmailAutomation\\src\\main\\resources\\drivers\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://mail.google.com");
-        Thread.sleep(10000);
+        Thread.sleep(3000);
     }
 
     @When("I enter valid credentials")
